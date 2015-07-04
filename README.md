@@ -6,12 +6,7 @@ L’objectif de ce TP est de prendre en main le langage Scala et de se familiari
 
 Téléchargez le [code du TP](https://github.com/studiodev/tp-scala/zipball/master). L’archive contient un projet Scala utilisant [sbt](https://github.com/harrah/xsbt/wiki) (équivalent de maven). Lancez la commande `$ sbt` à la racine du projet. Vous entrez alors dans l’environnement sbt, permettant de lancer des commandes similaires aux commandes maven, pour compiler le projet, le tester ou le lancer.
 
-Pour importer le projet dans IntelliJ (recommandé):
-```
-> gen-idea
-```
-Puis, dans IntelliJ, File −> Open Project….
-
+Pour importer le projet dans IntelliJ (recommandé): IntelliJ, File −> Open Project….
 
 Pour importer le projet dans Eclipse  :
 ```
