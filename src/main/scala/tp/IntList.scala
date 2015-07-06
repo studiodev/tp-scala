@@ -24,6 +24,22 @@ sealed abstract class IntList {
 }
 
 /**
+ * Convenient factories
+ */
+object IntList {
+
+  /** @return an empty list */
+  def nil: IntList = new Nil
+
+  /** @return a list with a `head` element and a `tail` list */
+  def cons(head: Int, tail: IntList): IntList = new Cons(head, tail)
+
+  /** @example IntList(1, 2, 3) */
+  def apply(xs: Int*): IntList = xs.foldRight(nil)(cons)
+
+}
+
+/**
  * Empty list
  */
 class Nil extends IntList {
@@ -77,18 +93,3 @@ class Cons(head: Int, tail: IntList) extends IntList {
   def foldBool(z: Boolean, op: (Int, Boolean) => Boolean) = ???
 }
 
-/**
- * Convenient factories
- */
-object IntList {
-
-  /** @return an empty list */
-  def nil: IntList = new Nil
-
-  /** @return a list with a `head` element and a `tail` list */
-  def cons(head: Int, tail: IntList): IntList = new Cons(head, tail)
-
-  /** @example IntList(1, 2, 3) */
-  def apply(xs: Int*): IntList = xs.foldRight(nil)(cons)
-
-}
