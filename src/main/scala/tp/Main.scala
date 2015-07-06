@@ -8,6 +8,6 @@ object Main extends App {
   val xs = IntList(1, 2, 3)
   println(xs)
 
-  //println(xs.map(x => x * x))
+  println(xs.map(x => x * x))
 
 }
