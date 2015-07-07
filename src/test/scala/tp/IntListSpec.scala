@@ -1,6 +1,7 @@
 package tp
 
 import org.scalatest._
+import core.UnitSpec
 
 class IntListSpec extends UnitSpec {
 

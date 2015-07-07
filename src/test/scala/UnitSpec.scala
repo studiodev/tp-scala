@@ -1,4 +1,4 @@
-package tp
+package core
 
 import org.scalatest._
 
